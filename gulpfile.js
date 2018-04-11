@@ -17,7 +17,7 @@ gulp.task('startServer', function () {
     .pipe(webserver({
       livereload: false,
       directoryListing: false,
-      open: true,
+      open: false,
       middleware: function(req, res, next) {
         if (/_kill_\/?/.test(req.url)) {
           res.end();
