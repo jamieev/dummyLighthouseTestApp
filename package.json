@@ -1,0 +1,29 @@
+{
+  "name": "dummyapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "pug": "2.0.0-beta11",
+    "@angular/http": "5.1.0",
+    "rxjs": "^5.5.2",
+    "@angular/core": "5.1.0",
+    "@angular/platform-browser": "5.1.0",
+    "@angular/common": "5.1.0",
+    "zone.js": "^0.8.14"
+  },
+  "devDependencies":{
+    "gulp": "^3.9.1",
+    "gulp-run-command": "^0.0.9",
+    "gulp-webserver": "^0.9.1",
+    "karma-chrome-launcher": "~2.1.1",
+    "lighthouse": "^2.5.0"
+  }
+}
