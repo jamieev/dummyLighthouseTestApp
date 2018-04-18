@@ -8,7 +8,7 @@ const chromeLauncher = require('chrome-launcher');
 let config = {
   min_scores: {
     performance: 50,
-    accessibility: 50
+    accessibility: 40
   }
 };
 
@@ -28,7 +28,7 @@ gulp.task('startServer', function () {
     }));
 });
 
-gulp.task('lighthouse', ['startServer'], function (cb) {
+gulp.task('default', ['startServer'], function (cb) {
   chromeLauncher.launch({chromeFlags: ['--headless']}).then(function (chrome) {
     lighthouse(
       `http://localhost:8000`,
